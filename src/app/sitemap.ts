@@ -17,7 +17,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 1,
     },
     {
-      url: url("/docs"),
+      url: url("/docs/get-started"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: url("/docs/fumadocs-ui"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
